@@ -1,0 +1,826 @@
+"<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Results.AG · Criação de sites e lojas virtuais</title>
+    <meta
+      name="description"
+      content="Sites e lojas virtuais feitos do zero para a sua marca, rápidos no celular e pensados para trazer cliente."
+    />
+    <meta
+      property="og:title"
+      content="Results.AG · Criação de sites e lojas virtuais"
+    />
+    <meta
+      property="og:description"
+      content="Sites e lojas virtuais feitos do zero para a sua marca."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Fraunces:wght@500&family=Poppins:wght@600;800&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="ambient-a"></span>
+      <span class="ambient-b"></span>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="siteHeader">
+      <div class="wrap nav-row">
+        <a href="#top" class="brand" aria-label="Results.AG, voltar ao início">
+          <img
+            src="assets/favicon.png"
+            alt=""
+            class="brand-mark"
+            width="32"
+            height="32"
+          />
+          <span class="brand-word">RESULTS<b>.AG</b></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Principal">
+          <a href="#servicos" data-nav="servicos">Serviços</a>
+          <a href="#metodo" data-nav="metodo">Como funciona</a>
+          <a href="#contato" data-nav="contato">Contato</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#contato" class="btn btn-solid nav-cta">Pedir orçamento</a>
+          <button
+            type="button"
+            class="nav-toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="navMobile"
+            aria-label="Abrir menu"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="nav-mobile" id="navMobile" aria-label="Menu">
+        <div class="nav-mobile-inner">
+          <a href="#servicos">Serviços</a>
+          <a href="#metodo">Como funciona</a>
+          <a href="#contato">Contato</a>
+          <a href="#contato" class="btn btn-solid">Pedir orçamento</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section id="top" class="hero">
+        <div class="wrap hero-copy">
+          <h1 class="hero-title">
+            <span class="line"><span>Vamos criar</span></span>
+            <span class="line"><span>seu novo site?</span></span>
+          </h1>
+          <p class="hero-sub">
+            Sites e lojas virtuais feitos do zero para a sua marca, rápidos no
+            celular e pensados para trazer cliente.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contato" class="btn btn-solid btn-lg">Quero meu site</a>
+            <a href="#metodo" class="btn btn-line btn-lg">Ver como funciona</a>
+          </div>
+        </div>
+
+        <!-- ===== Sites que fizemos, em miniatura ===== -->
+        <div class="wrap">
+          <div
+            class="mock"
+            id="mock"
+            aria-roledescription="carrossel"
+            aria-label="Sites feitos pela Results.AG"
+          >
+            <div class="mock-bar">
+              <span class="mock-dots" aria-hidden="true"
+                ><i></i><i></i><i></i
+              ></span>
+              <div class="mock-tabs" role="tablist" aria-label="Escolha o site">
+                <button
+                  type="button"
+                  role="tab"
+                  class="mock-tab"
+                  data-site="ticketx"
+                  data-go="0"
+                  aria-selected="true"
+                >
+                  <img
+                    src="assets/cases/ticketx-icon.png"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />TicketX
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  class="mock-tab"
+                  data-site="clinica"
+                  data-go="3"
+                  aria-selected="false"
+                >
+                  <img
+                    src="assets/cases/clinica-icon.png"
+                    alt=""
+                    width="16"
+                    height="16"
+                  /><span class="t-long">Clínica TCC Aldeia</span
+                  ><span class="t-short">TCC Aldeia</span>
+                </button>
+              </div>
+              <span class="mock-count" id="mockCount">1/6</span>
+            </div>
+            <div class="mock-progress"><span id="mockProgress"></span></div>
+
+            <div class="mk-stage" id="mockStage">
+              <!-- ===== TicketX · 1: início ===== -->
+              <div
+                class="mk-slide tx is-active"
+                data-site="ticketx"
+                role="tabpanel"
+                aria-label="TicketX, página inicial"
+              >
+                <div class="tx-head">
+                  <img
+                    src="assets/cases/ticketx-logo.png"
+                    alt="TicketX"
+                    class="tx-logo"
+                  />
+                  <span class="tx-nav"
+                    ><b>Início</b><span>Agenda</span><span>Dúvidas</span></span
+                  >
+                  <span class="tx-vip">Grupo VIP</span>
+                </div>
+                <div class="tx-body">
+                  <p class="tx-h1">
+                    Conectando você às <span>melhores experiências</span>
+                  </p>
+                  <p class="tx-p">
+                    Escolha seu evento e garanta seu ingresso de forma rápida,
+                    segura e sem complicação.
+                  </p>
+                  <div class="tx-chips">
+                    <span>Grupo VIP = descontos exclusivos</span
+                    ><span>Compra 100% segura</span>
+                  </div>
+                </div>
+                <div class="tx-promo" aria-hidden="true">
+                  <div>
+                    <span
+                      >Use o grupo <b>VIP</b> TicketX e ganhe desconto nas
+                      melhores festas</span
+                    ><span
+                      >Use o grupo <b>VIP</b> TicketX e ganhe desconto nas
+                      melhores festas</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===== TicketX · 2: agenda ===== -->
+              <div
+                class="mk-slide tx"
+                data-site="ticketx"
+                role="tabpanel"
+                aria-label="TicketX, agenda de festas"
+              >
+                <div class="tx-head">
+                  <img
+                    src="assets/cases/ticketx-logo.png"
+                    alt="TicketX"
+                    class="tx-logo"
+                  />
+                  <span class="tx-nav"
+                    ><span>Início</span><b>Agenda</b><span>Dúvidas</span></span
+                  >
+                  <span class="tx-vip">Grupo VIP</span>
+                </div>
+                <div class="tx-body tx-agenda">
+                  <p class="tx-kicker">Agenda TicketX</p>
+                  <p class="tx-h2">Festas disponíveis</p>
+                  <div class="tx-pills">
+                    <b>Todos</b><span>Vaquejada</span><span>Carvalheira</span
+                    ><span>Réveillon</span>
+                  </div>
+                </div>
+                <div class="tx-shelf" aria-hidden="true">
+                  <div class="tx-row">
+                    <span class="tx-card"
+                      ><img
+                        src="assets/cases/tx-swagg.jpg"
+                        alt=""
+                        loading="lazy"
+                      /><i>26 SET</i><b>SWAGG</b><em>5% OFF</em></span
+                    >
+                    <span class="tx-card"
+                      ><img
+                        src="assets/cases/tx-vaquejada-caruaru.jpg"
+                        alt=""
+                        loading="lazy"
+                      /><i>31 OUT</i><b>Vaquejada Caruaru</b
+                      ><em class="free">Sem taxa</em></span
+                    >
+                    <span class="tx-card"
+                      ><img
+                        src="assets/cases/tx-bikini-memories.jpg"
+                        alt=""
+                        loading="lazy"
+                      /><i>20 NOV</i><b>Bikini Memories</b><em>5% OFF</em></span
+                    >
+                    <span class="tx-card"
+                      ><img
+                        src="assets/cases/tx-reveillon-amore.jpg"
+                        alt=""
+                        loading="lazy"
+                      /><i>27 DEZ</i><b>Réveillon Amore</b><em>5% OFF</em></span
+                    >
+                    <span class="tx-card"
+                      ><img
+                        src="assets/cases/tx-wedo-na-praia.jpg"
+                        alt=""
+                        loading="lazy"
+                      /><i>16 JAN</i><b>Wedo na Praia</b
+                      ><em class="free">Sem taxa</em></span
+                    >
+                    <span class="tx-card"
+                      ><img
+                        src="assets/cases/tx-carvalheira-na-ladeira.jpg"
+                        alt=""
+                        loading="lazy"
+                      /><i>6 FEV</i><b>Carvalheira na Ladeira</b
+                      ><em>5% OFF</em></span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===== TicketX · 3: grupo VIP ===== -->
+              <div
+                class="mk-slide tx"
+                data-site="ticketx"
+                role="tabpanel"
+                aria-label="TicketX, grupo VIP"
+              >
+                <div class="tx-head">
+                  <img
+                    src="assets/cases/ticketx-logo.png"
+                    alt="TicketX"
+                    class="tx-logo"
+                  />
+                  <span class="tx-nav"
+                    ><span>Início</span><span>Agenda</span
+                    ><span>Dúvidas</span></span
+                  >
+                  <span class="tx-vip">Grupo VIP</span>
+                </div>
+                <div class="tx-body">
+                  <div class="tx-vipbox">
+                    <div>
+                      <p class="tx-kicker light">Comunidade TicketX</p>
+                      <p class="tx-h2">Entre para o Grupo VIP TICKETX</p>
+                      <span class="tx-vip big">Entrar no Grupo VIP</span>
+                    </div>
+                    <ul class="tx-list">
+                      <li>Descontos exclusivos</li>
+                      <li>Pré-vendas</li>
+                      <li>Links promocionais</li>
+                      <li>Avisos de novos eventos</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===== Clínica · 1: início ===== -->
+              <div
+                class="mk-slide cl"
+                data-site="clinica"
+                role="tabpanel"
+                aria-label="Clínica TCC Aldeia, página inicial"
+              >
+                <div class="cl-head">
+                  <span class="cl-brand"
+                    ><img src="assets/cases/clinica-icon.png" alt="" />Clínica
+                    TCC Aldeia</span
+                  >
+                  <span class="cl-btn sm">Agende sua consulta</span>
+                </div>
+                <div class="cl-body cl-hero">
+                  <div class="cl-hero-img">
+                    <img
+                      src="assets/cases/clinica-logo.png"
+                      alt="Clínica TCC Aldeia, Psicologia"
+                    />
+                  </div>
+                  <div>
+                    <p class="cl-eyebrow">
+                      TCC, ABA, crianças, adolescentes e adultos
+                    </p>
+                    <p class="cl-h1">
+                      “O primeiro passo para a mudança é o desejo de mudar.”
+                    </p>
+                    <span class="cl-btn">Agende sua consulta</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===== Clínica · 2: vídeo / sobre ===== -->
+              <div
+                class="mk-slide cl"
+                data-site="clinica"
+                role="tabpanel"
+                aria-label="Clínica TCC Aldeia, vídeo do espaço"
+              >
+                <div class="cl-head">
+                  <span class="cl-brand"
+                    ><img src="assets/cases/clinica-icon.png" alt="" />Clínica
+                    TCC Aldeia</span
+                  >
+                  <span class="cl-btn sm">Agende sua consulta</span>
+                </div>
+                <div class="cl-body cl-about">
+                  <div class="cl-video">
+                    <span class="cl-vlabel"><i></i>Conheça nosso espaço</span>
+                    <span class="cl-play" aria-hidden="true"
+                      ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path d="M8 5v14l11-7z" /></svg
+                    ></span>
+                    <span class="cl-vbar"><span></span></span>
+                  </div>
+                  <div class="cl-panel">
+                    <p class="cl-h2">Sobre a Clínica TCC Aldeia</p>
+                    <ul>
+                      <li>Escuta humanizada e sem julgamentos</li>
+                      <li>Técnicas baseadas em evidências</li>
+                      <li>Crianças, adolescentes e adultos</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===== Clínica · 3: profissionais ===== -->
+              <div
+                class="mk-slide cl"
+                data-site="clinica"
+                role="tabpanel"
+                aria-label="Clínica TCC Aldeia, profissionais"
+              >
+                <div class="cl-head">
+                  <span class="cl-brand"
+                    ><img src="assets/cases/clinica-icon.png" alt="" />Clínica
+                    TCC Aldeia</span
+                  >
+                  <span class="cl-btn sm">Agende sua consulta</span>
+                </div>
+                <div class="cl-body">
+                  <p class="cl-h2 center">Nossos profissionais</p>
+                  <div class="cl-pros">
+                    <div class="cl-pro">
+                      <span class="cl-mono" aria-hidden="true">ML</span>
+                      <b>Manuela Leão</b><span>Psicóloga Clínica</span>
+                      <span class="cl-btn sm">Agendar</span>
+                    </div>
+                    <div class="cl-pro">
+                      <span class="cl-mono" aria-hidden="true">CB</span>
+                      <b>Carol Berenguer</b><span>Psicóloga Clínica</span>
+                      <span class="cl-btn sm">Agendar</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mock-foot">
+              <button
+                type="button"
+                class="round-btn"
+                id="mockPrev"
+                aria-label="Tela anterior"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <span class="mock-hint">Arraste para ver mais telas</span>
+              <button
+                type="button"
+                class="round-btn"
+                id="mockNext"
+                aria-label="Próxima tela"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAIXA ============ -->
+      <div class="band" aria-label="100% estratégico. 100% resultado.">
+        <div class="band-track" aria-hidden="true">
+          <span>100% estratégico.</span><em>100% resultado.</em
+          ><img src="assets/favicon.png" alt="" /> <span>100% estratégico.</span
+          ><em>100% resultado.</em><img src="assets/favicon.png" alt="" />
+          <span>100% estratégico.</span><em>100% resultado.</em
+          ><img src="assets/favicon.png" alt="" /> <span>100% estratégico.</span
+          ><em>100% resultado.</em><img src="assets/favicon.png" alt="" />
+          <span>100% estratégico.</span><em>100% resultado.</em
+          ><img src="assets/favicon.png" alt="" /> <span>100% estratégico.</span
+          ><em>100% resultado.</em><img src="assets/favicon.png" alt="" />
+        </div>
+      </div>
+
+      <!-- ============ SERVIÇOS ============ -->
+      <section id="servicos" class="sec">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>O que fazemos</h2>
+            <p>
+              Três frentes, sempre com design próprio. Nenhum tema comprado,
+              nenhum layout reaproveitado.
+            </p>
+          </div>
+
+          <div class="swipe cols-3" id="swipeServicos">
+            <article class="svc">
+              <svg
+                class="svc-ico"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="4" width="18" height="16" rx="2" />
+                <line x1="3" y1="9" x2="21" y2="9" />
+              </svg>
+              <h3>Sites institucionais</h3>
+              <p>
+                Layout desenhado do zero em cima da sua marca, com textos e
+                estrutura pensados para quem vai comprar de você.
+              </p>
+              <a href="#contato" class="svc-link">Pedir orçamento</a>
+            </article>
+            <article class="svc">
+              <svg
+                class="svc-ico"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="20" r="1.4" />
+                <circle cx="18" cy="20" r="1.4" />
+                <path
+                  d="M2 3h3l2.6 12.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.5L22 7H6"
+                />
+              </svg>
+              <h3>Lojas virtuais</h3>
+              <p>
+                Catálogo, carrinho e checkout fáceis de usar no celular, para o
+                cliente não desistir no meio da compra.
+              </p>
+              <a href="#contato" class="svc-link">Montar minha loja</a>
+            </article>
+            <article class="svc">
+              <svg
+                class="svc-ico"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <line x1="21" y1="21" x2="16.2" y2="16.2" />
+              </svg>
+              <h3>SEO</h3>
+              <p>
+                Velocidade, estrutura e conteúdo organizados para o Google
+                entender o que você vende e mostrar sua empresa.
+              </p>
+              <a href="#contato" class="svc-link">Quero aparecer no Google</a>
+            </article>
+          </div>
+          <div class="swipe-dots" data-for="swipeServicos"></div>
+        </div>
+      </section>
+
+      <!-- ============ MÉTODO ============ -->
+      <section id="metodo" class="sec sec-alt">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>Como funciona</h2>
+            <p>
+              Do primeiro contato ao site no ar, você acompanha cada etapa e
+              aprova antes de seguirmos.
+            </p>
+          </div>
+
+          <ol class="swipe cols-4 steps" id="swipeMetodo">
+            <li class="step">
+              <span class="step-n">1</span>
+              <h3>Conversa</h3>
+              <p>
+                Entendemos o seu negócio, quem é o seu cliente e o que o site
+                precisa resolver.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step-n">2</span>
+              <h3>Design</h3>
+              <p>
+                Desenhamos as telas com a cara da sua marca e ajustamos com você
+                até aprovar.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step-n">3</span>
+              <h3>Desenvolvimento</h3>
+              <p>Programamos tudo do zero: leve, seguro e rápido no celular.</p>
+            </li>
+            <li class="step">
+              <span class="step-n">4</span>
+              <h3>Lançamento</h3>
+              <p>
+                Colocamos no ar e acompanhamos os números nas primeiras semanas
+                para ajustar o que for preciso.
+              </p>
+            </li>
+          </ol>
+          <div class="swipe-dots" data-for="swipeMetodo"></div>
+        </div>
+      </section>
+
+      <!-- ============ COMPARATIVO ============ -->
+      <section class="sec">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2>Modelo pronto ou sob medida?</h2>
+            <p>A diferença aparece no primeiro clique do seu cliente.</p>
+          </div>
+
+          <div class="swipe cols-2" id="swipeCompare">
+            <div class="cmp">
+              <h3>Site de modelo pronto</h3>
+              <ul>
+                <li>Visual preso ao template</li>
+                <li>Parecido com o do concorrente</li>
+                <li>Navegação genérica e lenta</li>
+                <li>Sem identidade própria</li>
+              </ul>
+            </div>
+            <div class="cmp cmp-good">
+              <h3>Sob medida com a Results.AG</h3>
+              <ul>
+                <li>Design 100% exclusivo</li>
+                <li>Estrutura pensada para vender</li>
+                <li>Rápido e fluido no celular</li>
+                <li>Identidade visual completa</li>
+              </ul>
+              <a href="#contato" class="btn btn-solid">Quero o sob medida</a>
+            </div>
+          </div>
+          <div class="swipe-dots" data-for="swipeCompare"></div>
+        </div>
+      </section>
+
+      <!-- ============ CONTATO ============ -->
+      <section id="contato" class="sec contato">
+        <div class="wrap contato-grid">
+          <div class="contato-copy">
+            <h2>Transforme sua presença digital.</h2>
+            <p>
+              Escolha o canal. Quem responde é a equipe que vai cuidar do seu
+              projeto, sem robô e sem compromisso.
+            </p>
+          </div>
+
+          <div class="channels">
+            <a
+              class="channel"
+              href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Quero%20criar%20meu%20site%20com%20a%20Results.AG"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="ch-ico">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"
+                  />
+                </svg>
+              </span>
+              <span class="ch-txt"
+                ><b>WhatsApp</b><small>Resposta mais rápida</small></span
+              >
+              <span class="ch-go" aria-hidden="true"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="8 7 17 7 17 16" /></svg
+              ></span>
+            </a>
+            <a
+              class="channel"
+              href="https://instagram.com/results.ag"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="ch-ico">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </span>
+              <span class="ch-txt"
+                ><b>Instagram</b
+                ><small>@results.ag, bastidores e projetos</small></span
+              >
+              <span class="ch-go" aria-hidden="true"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="8 7 17 7 17 16" /></svg
+              ></span>
+            </a>
+            <a class="channel" href="mailto:contato@results.ag">
+              <span class="ch-ico">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="M22 6l-10 7L2 6" />
+                </svg>
+              </span>
+              <span class="ch-txt"
+                ><b>E-mail</b><small>contato@results.ag</small></span
+              >
+              <span class="ch-go" aria-hidden="true"
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="8 7 17 7 17 16" /></svg
+              ></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="wrap footer-row">
+        <a href="#top" class="brand">
+          <img
+            src="assets/favicon.png"
+            alt=""
+            class="brand-mark"
+            width="32"
+            height="32"
+          />
+          <span class="brand-word">RESULTS<b>.AG</b></span>
+        </a>
+        <nav class="footer-links" aria-label="Rodapé">
+          <a href="#servicos">Serviços</a>
+          <a href="#metodo">Como funciona</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <p class="footer-copy" id="footerYear">© 2026 Results.AG</p>
+      </div>
+    </footer>
+
+    <!-- barra fixa de contato no celular -->
+    <a
+      class="dock"
+      id="dock"
+      href="https://wa.me/5581999999999?text=Ol%C3%A1!%20Quero%20criar%20meu%20site%20com%20a%20Results.AG"
+      target="_blank"
+      rel="noopener"
+    >
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path
+          d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"
+        />
+      </svg>
+      Chamar no WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
